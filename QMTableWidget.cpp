@@ -7,6 +7,7 @@ rw::QMTableWidget::QMTableWidget()
 {
 	this->setMouseTracking(true);
 	this->setAcceptDrops(true);
+	this->setSelectionMode(QAbstractItemView::SingleSelection);
 
 	mMenu = new QMenu(this);
 	QAction* strings_an = mMenu->addAction("all_strings");
